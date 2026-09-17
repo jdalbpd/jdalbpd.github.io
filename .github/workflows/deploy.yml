@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Se dispara en cada push a main
+  push:
+    branches: [main]
+  # Te permite correrlo manualmente desde la pestaña Actions en GitHub
+  workflow_dispatch:
+
+# Permisos necesarios para que el job pueda clonar el repo y publicar en Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita que dos deploys corran en paralelo si pusheás varias veces seguidas
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
+        with:
+          node-version: 22
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

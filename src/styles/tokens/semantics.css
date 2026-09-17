@@ -1,5 +1,60 @@
+@import './primitives.css';
+
 :root {
-  --color-surface-base: var(--gray-950);
-  --color-text-brand: var(--blue-500);
-  --spacing-section: var(--space-4);
+
+  /*-------------DESIGN SYSTEM TOKENS-------------*/
+  /*-------------BRAND COLORS / ACTION COLORS-------------*/
+
+  /*PRIMARY COLOR*/
+  --color-brand-primary: var(--core-500);
+  --color-brand-primary-hover: var(--core-400);
+  --color-brand-primary-active: var(--core-600);
+
+  /*SECONDARY COLOR*/
+  --color-brand-secondary: var(--ether-500);
+  --color-brand-secondary-hover: var(--ether-400);
+  --color-brand-secondary-active: var(--ether-600);
+
+  /*-------------STATUS COLORS-------------*/
+  /*SUCCESS*/
+  --color-status-success: var(--core-300);
+  --color-status-success-hover: var(--core-400);
+  --color-status-success-pressed: var(--core-500);
+
+  /*WARNING*/
+  --color-status-warning: var(--flame-400);
+  --color-status-warning-hover: var(--flame-500);
+  --color-status-warning-pressed: var(--flame-600);
+
+  /*DESTRUCTIVE*/
+  --color-status-danger: var(--critical-500);
+  --color-status-danger-hover: var(--critical-600);
+  --color-status-danger-pressed: var(--critical-700);
+
+  /*-------------SURFACE COLORS-------------*/
+  --color-surface-base: var(--onyx-950);
+  --color-surface-elevated: var(--onyx-800);
+
+  /*-------------TEXT COLORS-------------*/
+  --color-text-default: var(--onyx-100);
+  --color-text-muted: var(--onyx-400);
+  --color-text-muted-2: var(--onyx-500);
+  --color-text-secondary: var(--ether-500);
+
+  /*-------------BUTTON COLORS-------------*/
+  --primary-button-color: var(--ether-500);
+  --primary-button-color-hover: var(--ether-400);
+  --secondary-button-color: var(--fusion-500);
+  --secondary-button-color-hover: var(--fusion-400);
+  --button-label-color: var(--onyx-950);
+  --button-label-color-hover: var(--onyx-800);
+
+  /*-------------CASE STUDY CARD COLORS-------------*/
+  --case-study-card-color: var(--onyx-900);
+  --case-study-card-color-hover: var(--onyx-800-a8);
+
+  /*-------------CASE STUDY CARD BORDER COLORS-------------*/
+  --case-study-card-border-color: var(--onyx-800);
+
+
 }

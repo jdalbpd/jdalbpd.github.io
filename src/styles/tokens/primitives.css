@@ -1,5 +1,239 @@
 :root {
-  --gray-950: oklch(0.13 0 0);
-  --blue-500: oklch(0.6 0.2 250);
-  --space-4: 1rem;
+
+  /*-------------MY COLOR PALLETTE-------------*/
+
+  /*------------- CORE COLOR-------------*/
+  /*SOLID SCALE*/
+  --core-50: #E8FFEF;
+  --core-100: #CFFFDF;
+  --core-200: #A0FFC4;
+  --core-300: #26FF9A;
+  --core-400: #0BF692;
+  --core-500: #0AE98A;
+  --core-600: #06B86C;
+  --core-700: #03864D;
+  --core-800: #015A32;
+  --core-900: #002F18;
+  --core-950: #001D0C;
+
+  /*ALPHA CORE*/
+  --core-500-a6: #0AE98A52;
+
+  /*------------- ETHER COLOR-------------*/
+  /*SOLID SCALE*/
+  --ether-50: #E8FFEF;
+  --ether-100: #E3F7FF;
+  --ether-200: #C3EFFF;
+  --ether-300: #9FE8FF;
+  --ether-400: #6EE0FF;
+  --ether-500: #00DAFF;
+  --ether-600: #00AAC7;
+  --ether-700: #007D93;
+  --ether-800: #005363;
+  --ether-900: #002C36;
+  --ether-950: #001B21;
+
+  /*ALPHA ETHER*/
+  --ether-500-a3: #00DAFF14;
+
+  /*------------- FUSION COLOR-------------*/
+  /*SOLID SCALE*/
+  --fusion-50: #F6F1FF;
+  --fusion-100: #EEE4FF;
+  --fusion-200: #DDC8FF;
+  --fusion-300: #D0B0FF;
+  --fusion-400: #C292FF;
+  --fusion-500: #B573FF;
+  --fusion-600: #A434FF;
+  --fusion-700: #8300D3;
+  --fusion-800: #580090;
+  --fusion-900: #330057;
+  --fusion-950: #22003C;
+
+  /*ALPHA FUSION*/
+  --fusion-400-a3: #C292FF14;
+  --fusion-500-a6: #B573FF52;
+
+  /*------------- ONYX COLOR-------------*/
+  /*SOLID SCALE*/
+  --onyx-50: #F0F1F3;
+  --onyx-100: #E1E2E7;
+  --onyx-200: #C4C6D0;
+  --onyx-300: #A5A8B7;
+  --onyx-400: #898DA1;
+  --onyx-500: #6F7489;
+  --onyx-600: #575B6C;
+  --onyx-700: #414451;
+  --onyx-800: #292C35;
+  --onyx-900: #16171D;
+  --onyx-950: #0A0B0F;
+  
+  /*ALPHA ONYX*/
+  --onyx-900-a5: #16171D52;
+  --onyx-800-a8: #292C357A;
+
+  /*------------- AMBER COLOR-------------*/
+  /*SOLID SCALE*/
+  --amber50: #FFF8F0;
+  --amber100: #FFF2E0;
+  --amber200: #FFE4BE;
+  --amber300: #FFD488;
+  --amber400: #FFC63F;
+  --amber500: #F5BB00;
+  --amber600: #C09200;
+  --amber700: #8D6A00;
+  --amber800: #604800;
+  --amber900: #342600;
+  --amber950: #201600;
+  
+  /*------------- LOGIC COLOR-------------*/
+  /*SOLID SCALE*/
+  --logic-50: #EDF0FE;
+  --logic-100: #DAE2FD;
+  --logic-200: #B4C5FB;
+  --logic-300: #90ACFA;
+  --logic-400: #6190F8;
+  --logic-500: #2776EC;
+  --logic-600: #1D5DBD;
+  --logic-700: #144692;
+  --logic-800: #0A2E65;
+  --logic-900: #041A3E;
+  --logic-950: #02102B;
+
+  /*------------- FLAME COLOR-------------*/
+  /*SOLID SCALE*/
+  --flame-50: #fff0ef;
+  --flame-100: #ffe2df;
+  --flame-200: #ffbfb9;
+  --flame-300: #ff9f94;
+  --flame-400: #ff7c67;
+  --flame-500: #ff4e00;
+  --flame-600: #cb3c00;
+  --flame-700: #992b00;
+  --flame-800: #691b00;
+  --flame-900: #410d00;
+  --flame-950: #2c0600;
+
+  /*------------- CRITICAL COLOR-------------*/
+  /*SOLID SCALE*/
+  --critical-50: #FFECEE;
+  --critical-100: #FEDADC;
+  --critical-200: #FEB3B9;
+  --critical-300: #FE8893;
+  --critical-400: #FE5369;
+  --critical-500: #EC0B43;
+  --critical-600: #BD0734;
+  --critical-700: #910426;
+  --critical-800: #670218;
+  --critical-900: #40010B;
+  --critical-950: #2C0006;
+
+  /*ALPHA CRITICAL*/
+  --critical-400-a2: #FE53690A;
+  
+  /*-------------GRADIENTS COLORS-------------*/
+
+  --bg-gradient:radial-gradient(64.64% 100% at 50% 0%, var(--onyx-900) 46.63%, var(--onyx-950) 100%);
+  --hero-name-gradient: linear-gradient(89.44deg, var(--ether-600) -65.88%, var(--onyx-200) 75.12%);
+  --bg-gradient-2:radial-gradient(100% 829.44% at 100% 0%, var(--onyx-900) 46.63%, var(--onyx-950) 53.44%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  --card-gradient: radial-gradient(86.51% 139.74% at 0% 0%, #16171D 0%, #0A0B0F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  /*-------------SIZING (MASTER SCALE)-------------*/
+  --xs: 4px;
+  --sm: 8px;
+  --sm2: 12px;
+  --text-base: 14px;
+  --md: 16px;
+  --md2: 20px;
+  --lg: 24px;
+  --xl: 32px;
+  --xl2: 40px;
+  --xxl: 48px;
+  --xxl-1: 56px;
+  --xxl-2: 64px;
+  --full: 999px;
+
+  /*-------------SPACING SCALE-------------*/
+  /* All values alias SIZING — no independent px declarations. */
+  --sp-xs: var(--xs);
+  --sp-sm: var(--sm);
+  --sp-sm2: var(--sm2);
+  --sp-base: var(--md);
+  --sp-md: var(--lg);
+  --sp-lg: var(--xl);
+  --sp-xl: var(--xl2);
+  --sp-xxl: var(--xxl);
+  --sp-full: var(--full);
+
+  /*-------------RADIUS SCALE-------------*/
+  /* All values alias SIZING — no independent px declarations.*/
+  --r-xs: var(--xs);
+  --r-sm: var(--sm);
+  --r-base: var(--md);
+  --r-md: var(--lg);
+  --r-lg: var(--xl);
+  --r-xl: var(--xl2);
+  --r-xxl: var(--xxl);
+  --r-full: var(--full);
+
+  /*-------------PADDING SCALE-------------*/
+  /* All values alias SIZING — no independent px declarations. */
+  --p-xs: var(--xs);
+  --p-sm: var(--sm);
+  --p-sm2: var(--sm2);
+  --p-base: var(--md);
+  --p-md2: var(--md2);
+  --p-md: var(--lg);
+  --p-lg: var(--xl);
+  --p-xl: var(--xl2);
+  --p-xxl: var(--xxl);
+  --p-full: var(--full);
+
+  /*-------------TYPE SCALES-------------*/
+  /*--------FONT-SIZES--------*/
+  /*--------FONT WEIGHT SCALE--------*/
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /*--------LINE HEIGHT SCALE--------*/
+  --lh-tight: 1.25;
+  --lh-snug: 1.375;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.625;
+
+  /*--------LETTER SPACING SCALE--------*/
+  --ls-tight: 0.4px;
+  --ls-normal: 0.6px;
+
+  /*body*/
+  --fs-b-lg: var(--lg);
+  --fs-b-base: var(--text-base);
+  --fs-b-md: var(--md);
+  --fs-b-sm: var(--sm2);
+
+  /*label*/
+  --fs-l-lg: var(--lg);
+  --fs-l-base: var(--text-base);
+  --fs-l-sm: var(--sm);
+
+  /*titles*/
+  --fs-t-lg: var(--lg);
+  --fs-t-xl: var(--lg2);
+  --fs-t-base: var(--text-base);
+  --fs-t-sm: var(--sm);
+
+  /*Headlines*/
+  --fs-h1: var(--lg);
+  --fs-h2: var(--text-base);
+  --fs-h3: var(--sm);
+
+  /*Display*/
+  --fs-d-lg: var(--xxl-2);
+  --fs-d-md: var(--xxl-1);
+  --fs-d-sm: var(--xxl);
+  --fs-d-xs: var(--xl2);
+
 }

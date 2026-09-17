@@ -1,0 +1,5 @@
+:root {
+  --color-surface-base: var(--gray-950);
+  --color-text-brand: var(--blue-500);
+  --spacing-section: var(--space-4);
+}

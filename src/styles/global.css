@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource-variable/dm-sans";
+@import "@fontsource-variable/jetbrains-mono";
+
+@import "./tokens/primitives.css";
+@import "./tokens/semantics.css";
+
+@theme {
+  --font-display: "Bricolage Grotesque Variable", sans-serif;
+  --font-body: "DM Sans Variable", sans-serif;
+  --font-mono: "JetBrains Mono Variable", monospace;
+
+  --color-surface-base: var(--color-surface-base);
+  --color-text-brand: var(--color-text-brand);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-neutral-950 text-neutral-50 font-body antialiased;
+  }
+}

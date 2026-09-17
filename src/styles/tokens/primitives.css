@@ -1,0 +1,5 @@
+:root {
+  --gray-950: oklch(0.13 0 0);
+  --blue-500: oklch(0.6 0.2 250);
+  --space-4: 1rem;
+}

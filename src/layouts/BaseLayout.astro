@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -8,7 +10,6 @@ interface Props {
 const {
   title,
   description = 'Senior Product Designer working at the intersection of design systems, design engineering, and fintech.',
-  noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -19,19 +20,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/dualpixel.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
-
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <title>{title} · JD</title>
     <meta name="description" content={description} />
 
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>

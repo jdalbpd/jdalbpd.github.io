@@ -162,6 +162,7 @@
   --gap-6: 6px;
   --gap-10: 10px;
   --gap-18: 18px;
+  --gap-64: 64px;
 
   /*-------------SPACING SCALE-------------*/
   /* Tailwind v4 does not distinguish padding from
@@ -189,7 +190,6 @@ margin/gap: they all derive from the same --spacing- namespace.*/
   --radius-full: var(--full);
 
   /*-------------PADDING SCALE-------------*/
-  /* All values alias SIZING — no independent px declarations. */
   --p-xs: var(--xs);
   --p-sm: var(--sm);
   --p-sm2: var(--sm2);
@@ -228,13 +228,13 @@ margin/gap: they all derive from the same --spacing- namespace.*/
   --leading-normal: 1.5;
   --leading-relaxed: 1.625;
 
-  /* Ampliada con los valores reales del holding page */
+  /* Expanded with the actual values ​​of the holding page */
   --tracking-tight: 0.4px;
   --tracking-normal: 0.6px;
-  --tracking-wide: 0.8px;   /* NUEVO — headline "JD Albarran" */
-  --tracking-wider: 1px;    /* NUEVO — palabras del subtítulo */
-  --tracking-widest: 2px;   /* NUEVO — "Systems" en el subtítulo */
-  --tracking-loose: 4px;    /* NUEVO — eyebrow "AVAILABLE FOR WORK" */
+  --tracking-wide: 0.8px;   /* NEW — headline "JD Albarran" */
+  --tracking-wider: 1px;    /* NEW — palabras del subtítulo */
+  --tracking-widest: 2px;   /* NEW — "Systems" en el subtítulo */
+  --tracking-loose: 4px;    /* NEW — eyebrow "AVAILABLE FOR WORK" */
 
   /*body*/
   --text-b-lg: var(--lg);
@@ -245,7 +245,7 @@ margin/gap: they all derive from the same --spacing- namespace.*/
   /*label*/
   --text-l-lg: var(--lg);
   --text-l-base: var(--text-base);
-  --text-l-xs: var(--sm2); /* NUEVO (12px) — eyebrow del holding page */
+  --text-l-xs: var(--sm2); /* NEW (12px) — eyebrow del holding page */
   --text-l-sm: var(--sm);
 
   /*titles*/

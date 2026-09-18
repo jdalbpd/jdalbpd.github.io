@@ -3,16 +3,114 @@
 @import "@fontsource-variable/dm-sans";
 @import "@fontsource-variable/jetbrains-mono";
 
-@import "./tokens/primitives.css";
 @import "./tokens/semantics.css";
 
 @theme {
+
+  /* Fonts */
   --font-display: "Bricolage Grotesque Variable", sans-serif;
   --font-body: "DM Sans Variable", sans-serif;
   --font-mono: "JetBrains Mono Variable", monospace;
 
+  /* Colores de marca / acción */
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-primary-hover: var(--color-brand-primary-hover);
+  --color-brand-primary-active: var(--color-brand-primary-active);
+  --color-brand-secondary: var(--color-brand-secondary);
+  --color-brand-secondary-hover: var(--color-brand-secondary-hover);
+  --color-brand-secondary-active: var(--color-brand-secondary-active);
+
+  /* Estado */
+  --color-status-success: var(--color-status-success);
+  --color-status-success-hover: var(--color-status-success-hover);
+  --color-status-success-pressed: var(--color-status-success-pressed);
+  --color-status-warning: var(--color-status-warning);
+  --color-status-warning-hover: var(--color-status-warning-hover);
+  --color-status-warning-pressed: var(--color-status-warning-pressed);
+  --color-status-danger: var(--color-status-danger);
+  --color-status-danger-hover: var(--color-status-danger-hover);
+  --color-status-danger-pressed: var(--color-status-danger-pressed);
+
+  /* Superficie y texto */
   --color-surface-base: var(--color-surface-base);
-  --color-text-brand: var(--color-text-brand);
+  --color-surface-elevated: var(--color-surface-elevated);
+  --color-text-default: var(--color-text-default);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-muted-2: var(--color-text-muted-2);
+  --color-text-secondary: var(--color-text-secondary);
+
+  /* Botones y cards */
+  --color-button-primary: var(--color-button-primary);
+  --color-button-primary-hover: var(--color-button-primary-hover);
+  --color-button-secondary: var(--color-button-secondary);
+  --color-button-secondary-hover: var(--color-button-secondary-hover);
+  --color-button-label: var(--color-button-label);
+  --color-button-label-hover: var(--color-button-label-hover);
+  --color-card-case-study: var(--color-card-case-study);
+  --color-card-case-study-hover: var(--color-card-case-study-hover);
+  --color-card-case-study-border: var(--color-card-case-study-border);
+
+  /* Tipografía */
+  --text-b-lg: var(--text-b-lg);
+  --text-b-base: var(--text-b-base);
+  --text-b-md: var(--text-b-md);
+  --text-b-sm: var(--text-b-sm);
+  --text-l-lg: var(--text-l-lg);
+  --text-l-base: var(--text-l-base);
+  --text-l-xs: var(--text-l-xs);
+  --text-l-sm: var(--text-l-sm);
+  --text-t-lg: var(--text-t-lg);
+  --text-t-xl: var(--text-t-xl);
+  --text-t-base: var(--text-t-base);
+  --text-t-sm: var(--text-t-sm);
+  --text-h1: var(--text-h1);
+  --text-h2: var(--text-h2);
+  --text-h3: var(--text-h3);
+  --text-d-lg: var(--text-d-lg);
+  --text-d-md: var(--text-d-md);
+  --text-d-sm: var(--text-d-sm);
+  --text-d-xs: var(--text-d-xs);
+
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+  --font-weight-extrabold: var(--font-weight-extrabold);
+
+  --leading-tight: var(--leading-tight);
+  --leading-snug: var(--leading-snug);
+  --leading-normal: var(--leading-normal);
+  --leading-relaxed: var(--leading-relaxed);
+
+  --tracking-tight: var(--tracking-tight);
+  --tracking-normal: var(--tracking-normal);
+  --tracking-wide: var(--tracking-wide);
+  --tracking-wider: var(--tracking-wider);
+  --tracking-widest: var(--tracking-widest);
+  --tracking-loose: var(--tracking-loose);
+
+  /* Radio y espaciado */
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-base: var(--radius-base);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-xxl: var(--radius-xxl);
+  --radius-full: var(--radius-full);
+
+  --spacing-xs: var(--spacing-xs);
+  --spacing-sm: var(--spacing-sm);
+  --spacing-sm2: var(--spacing-sm2);
+  --spacing-base: var(--spacing-base);
+  --spacing-md2: var(--spacing-md2);
+  --spacing-md: var(--spacing-md);
+  --spacing-lg2: var(--spacing-lg2);
+  --spacing-lg: var(--spacing-lg);
+  --spacing-xl: var(--spacing-xl);
+  --spacing-xxl: var(--spacing-xxl);
+  --spacing-full: var(--spacing-full);
+
 }
 
 @layer base {
@@ -20,6 +118,6 @@
     color-scheme: dark;
   }
   body {
-    @apply bg-neutral-950 text-neutral-50 font-body antialiased;
+    @apply bg-surface-base text-text-default font-body antialiased;
   }
 }

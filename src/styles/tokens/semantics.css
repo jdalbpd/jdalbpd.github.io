@@ -42,16 +42,17 @@
   --color-text-secondary: var(--ether-500);
 
   /*-------------BUTTON COLORS-------------*/
-  --primary-button-color: var(--ether-500);
-  --primary-button-color-hover: var(--ether-400);
-  --secondary-button-color: var(--fusion-500);
-  --secondary-button-color-hover: var(--fusion-400);
-  --button-label-color: var(--onyx-950);
-  --button-label-color-hover: var(--onyx-800);
+  --color-button-primary: var(--ether-500);
+  --color-button-primary-hover: var(--ether-400);
+  --color-button-secondary: var(--fusion-500);
+  --color-button-secondary-hover: var(--fusion-400);
+  --color-button-label: var(--onyx-950);
+  --color-button-label-hover: var(--onyx-800);
 
   /*-------------CASE STUDY CARD COLORS-------------*/
-  --case-study-card-color: var(--onyx-900);
-  --case-study-card-color-hover: var(--onyx-800-a8);
+  --color-card-case-study: var(--onyx-900);
+  --color-card-case-study-hover: var(--onyx-800-a8);
+  --color-card-case-study-border: var(--onyx-800);
 
   /*-------------CASE STUDY CARD BORDER COLORS-------------*/
   --case-study-card-border-color: var(--onyx-800);
